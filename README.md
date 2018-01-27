@@ -41,7 +41,7 @@ Code below:
 
 One of problem files found -> blurbs/59c653d9fe.txt
 
-![screenshot of special characters - issue](data-issue.png)
+![screenshot of special characters - issue](img/data-issue.png)
 
 ```bash
 CHARS=$(python -c 'print u"\u0091\u0092\u00a0\u200E".encode("utf8")')
@@ -69,5 +69,10 @@ randomly assigned files to `pos` and `neg`. I later sorted the data in 'sorted-b
 Ultimately the most suitable data -> movie_review data I used for training (in NLTK corpora).
 This is commented out in senti.py and is labelled `# BETTER TESTING DATA`.
 
-![screenshot of using movie_review data](movie_reviews.png)
-![screenshot of using unsorted blurbs](blurbs.png)
+![screenshot of using movie_review data](img/movie_reviews.png)
+![screenshot of using unsorted blurbs](img/blurbs.png)
+
+There are unused functions in `indiv.py`. These were ideas that I was thinking of persuing before deciding on text classification using NLTK and Naive Bayes.
+
+eg. tagSent
+![screenshot of using unsorted blurbs](img/tagSent.png)
