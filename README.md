@@ -61,3 +61,13 @@ echo 'set encoding=utf-8' >> ~/.vimrc
 echo 'set fileencoding=utf-8' >> ~/.vimrc
 for file in $(find path/to/blurbs/ -type f); do vim "$file"wq; done
 ```
+
+### Note
+There are two directories containing data: 'blurbs' and 'sorted-blurbs'. I had originally 
+randomly assigned files to `pos` and `neg`. I later sorted the data in 'sorted-blurbs'...
+
+Ultimately the most suitable data -> movie_review data I used for training (in NLTK corpora).
+This is commented out in senti.py and is labelled `# BETTER TESTING DATA`.
+
+![screenshot of using movie_review data](movie_reviews.png)
+![screenshot of using unsorted blurbs](blurbs.png)

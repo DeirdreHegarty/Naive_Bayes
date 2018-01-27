@@ -51,7 +51,8 @@ myfeatures = [(find_features(rev), category) for (rev, category) in runData]
 training_set = featuresets[:1900]
 testing_set = myfeatures[:1900]
 
-
+# BETTER TESTING DATA
+# testing_set = featuresets[1900:]
 
 # USE PICKLED THE CLASSIFIER 
 
